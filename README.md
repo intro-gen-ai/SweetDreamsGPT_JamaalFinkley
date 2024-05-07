@@ -1,5 +1,7 @@
-# Project Name Here
-Short description of project. Replace this and the project section below with a 1-3 sentence description of your project. 
+# Sweet Dreams GPT
+Sweet Dreams GPT emerges as a groundbreaking solution designed to maintain the emotional bond between children and their parents or guardians, especially during times of separation. The bedtime story is a cherished tradition. However, not all parents have the luxury of being physically present. Sweet Dreams GPT fills this gap by leveraging advanced AI technology to create personalized bedtime stories.
+
+
 
 Project Notes:
 
@@ -15,33 +17,45 @@ Project Notes:
 ## Project PI/Project Team 
 **Due March 21, 11:59pm**
 
-Name, Vandy email, VUNetID, Role
+Jamaal Finkley, Jamaal.G.Finkley@Vanderbilt.edu, finkljg1, founder
 
 ## Project Proposal 
 **Due March 21, 11:59pm**
 
 300-1000 words total across all of the sections below
 
-### Description of Problem/Opportunity
+This section outlines the purpose, technological foundation, and future direction of Sweet Dreams GPT, aiming to revolutionize bedtime routines for children worldwide.
 
-### Proposed Solution/Approach
 
 ### Project Outline and Timeline
 What are the steps to complete the project? State your milestones and the dates you want to complete them. 
 
-## Goals of project 
-**Due March 21, 11:59pm**
+Sweet Dreams GPT is developed with a heartfelt purpose: to keep the bond between children and their separated parents or guardians strong and vibrant through the power of storytelling.
+Technology and Features
+Sweet Dreams GPT is built on a state-of-the-art generative AI platform, incorporating personalized bedtime stories, AI-powered illustrations, and voice cloning technology.
+Enhanced Content and Safety Measures
+To ensure the highest quality of bedtime stories, Sweet Dreams GPT's training data has been enriched with supplementary fairytales and popular bedtime stories from around the world, with increased guardrails to prevent inappropriate content.
+Innovative Features and Future Directions
+Another feature in development allows users to compile 25 of their favorite bedtime stories into a personalized children's e-book, delivered through Amazon.
 
+"Always and Forever" Feature
+Expanding its compassionate reach, Sweet Dreams GPT introduces the 'Always and Forever' feature. This allows AI-generated voice capture to reproduce bedtime stories from a parent, guardian, or grandparent who is recently deceased. The AI technology can reproduce these stories with as little as a saved voicemail, offering a sense of continuity and presence.
+
+## Goals of project 
 Describe 1-5 goals of the project. 
-### Goal 1
-### Goal 2
+### Goal 1 Create engaging bedtime stories that make the child the center of the story
+### Goal 2 Create illustrations to go with the story that include the child amd the themes of the story
+### Goal 3 to create safeguards to prevent hallucinations and story themes that may be offensive to some parents and dangerous for the child
+### Goal 4 to use ai voice cloning trchnology to allow for audio playback of the story
+ 
 
 ## Project Metrics 
 **Due March 21, 11:59pm**
 
 Compose 2-5 metrics to determine the success of the project. These should be measureable, and should translate to a letter grade for each. 
-### Metric 1
-### Metric 2
+### Metric 1 - the engagement of the stories 
+### Metric 2 - the safeguards are implemented as to not have sexually suggestive content within the stories
+### Metric 3 - the voice cloning technology makes a voice that is similar to the source boice
 
 ## Self-Evaluation
 **Due April 26, 11:59pm**
