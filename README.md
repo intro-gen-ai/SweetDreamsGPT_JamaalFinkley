@@ -2,18 +2,6 @@
 Sweet Dreams GPT emerges as a groundbreaking solution designed to maintain the emotional bond between children and their parents or guardians, especially during times of separation. The bedtime story is a cherished tradition. However, not all parents have the luxury of being physically present. Sweet Dreams GPT fills this gap by leveraging advanced AI technology to create personalized bedtime stories.
 
 
-
-Project Notes:
-
-- Please remember to keep your repo private when you create it from this template.
-- Be sure to create your report in the **intro-gen-ai** organization. 
-- The name of the repo should be the name of the project, or a shortened version of the name.
-- Each section should be completed by the deadline indicated. You submit by making a commit of this README.md file. Except for minor edits, please do no change the Proposal, Goals, or Metrics sections after the submission deadline.
-- General guidance on formatting writing in markdown files (like this README.md file) is at https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax.
-- There is a [recording of the the class discussion on the use of this template](https://vanderbilt.zoom.us/rec/share/RjihScz0Ti7RId0KMj7GWBc8XueS571_JnFqDQwli0AuKLsgaau0j_RcphBjwYtV.HP10ROf2TwPUn6TA?startTime=1697553005000).
-- You can sign up for a time to discuss your ideas for the project at https://calendly.com/jesse-spencer-smith. We'll also be discussing project in class on Tuesday after Fall Break.
-- Remember that there is an AI Showcase on April 19 (with prizes for Best in Show), so you might want to consider completing your project by then. 
-
 ## Project PI/Project Team 
 
 
@@ -93,3 +81,58 @@ Next up, the journey for Sweet Dreams GPT is all about taking this innovative co
 In terms of technology, the focus will be on selecting the best large language model (LLM) that can integrate seamlessly with our application through its API. This choice will be crucial because we need a robust and flexible AI backbone that can generate rich, diverse, and engaging stories consistently.
 
 Once we've got the tech and interface nailed down, the goal is to launch Sweet Dreams GPT into the market. This will involve a lot of testing, gathering user feedback, and iteratively improving the product. The ultimate vision is to create a platform where storytelling helps maintain and strengthen bonds, no matter the distance—making every bedtime a moment of connection and magic.
+
+
+
+Code for User Interface:
+
+import os
+
+def collect_child_info():
+    print("Welcome to Sweet Dreams GPT personalized bedtime stories!")
+    
+    # Collect child's name
+    child_name = input("Please enter your child's name: ")
+
+    # Collect child's description or photo
+    description_choice = input("Would you like to describe your child or upload a photo? Enter 'describe' or 'upload': ")
+    if description_choice.lower() == 'describe':
+        child_description = input("Please describe your child's appearance (hair color, eye color, etc.): ")
+        child_image = None
+    elif description_choice.lower() == 'upload':
+        child_description = None
+        file_path = input("Please enter the path to your child's photo: ")
+        if os.path.exists(file_path):
+            with open(file_path, "rb") as file:
+                child_image = file.read()
+        else:
+            print("File not found, please try again.")
+            return collect_child_info()
+    else:
+        print("Invalid choice, please try again.")
+        return collect_child_info()
+    
+    # Collect child's interests
+    interests = []
+    print("Please enter 4 things that interest your child (e.g., dinosaurs, space, painting, etc.).")
+    for i in range(1, 5):
+        interest = input(f"Interest {i}: ")
+        interests.append(interest)
+    
+    return {
+        "name": child_name,
+        "description": child_description,
+        "photo": child_image,
+        "interests": interests
+    }
+
+# Use the function
+child_info = collect_child_info()
+print("Thank you! Here's the information you provided:")
+print(f"Child's Name: {child_info['name']}")
+if child_info['description']:
+    print(f"Description: {child_info['description']}")
+else:
+    print("Photo: Uploaded successfully.")
+print(f"Interests: {', '.join(child_info['interests'])}")
+
